@@ -9,7 +9,7 @@ const prisma = new PrismaClient(); // <-- You missed this line
 const PORT = 3000;
 
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://edu-cational.vercel.app", credentials: true }));
 
 app.post("/signup", Signuser);
 app.post("/login", LoginUser);
